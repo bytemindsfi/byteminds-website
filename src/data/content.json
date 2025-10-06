@@ -61,12 +61,12 @@
             {
                 "icon": "navigation",
                 "title": "Technical Consulting",
-                "description": "Fugit magnam qui vero officia quis qui. Et aut maiores omnis nequeag unde sos voluptas."
+                "description": "Expert guidance on technology strategy, architecture, and development decisions that align with your business goals."
             },
             {
                 "icon": "headset",
                 "title": "UI/UX & Design Systems",
-                "description": "Rem doloremque labore ullam officia quos odit. Minus sed voluptatem illo quam rerum."
+                "description": "Beautiful, user-centered interfaces backed by scalable design systems that ensure consistency across your products."
             }
         ]
     },
@@ -98,7 +98,7 @@
     },
     "cta": {
         "title": "Get started with Byteminds",
-        "subtitle": "Learn and become a crypto guru with us.",
+        "subtitle": "Let's build something great together. Schedule your free consultation.",
         "buttonText": "Book a Date"
     },
     "footer": {
