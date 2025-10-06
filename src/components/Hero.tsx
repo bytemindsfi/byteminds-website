@@ -1,32 +1,23 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, ArrowUp } from "lucide-react";
 import content from "@/data/content.json";
 
-const cryptoCards = [
+const clientCards = [
   {
-    name: "Ethereum",
-    symbol: "ETC",
-    icon: "⟠",
-    change: -5.21,
-    marketCap: "$332,981,652,182",
-    price: "- $3,050.19"
-  },
-  {
-    name: "Bitcoin",
-    symbol: "BTC",
-    icon: "₿",
-    change: 31.83,
-    marketCap: "$882,128,981,371",
-    price: "- $33,691.87",
+    name: "Fairytale Magic Oy",
+    type: "Sports & Entertainment Platform",
+    description: "Full-stack development and ongoing maintenance for a sports entertainment mobile application and admin dashboard.",
+    technologies: "React Native, NestJS, MongoDB",
+    results: "Scalable, secure platform handling real-time sports data and user transactions",
+    website: "https://www.fairytalemagic.fi/",
     featured: true
   },
   {
-    name: "Litecoin",
-    symbol: "LTC",
-    icon: "Ł",
-    change: 10.32,
-    marketCap: "$761,291,637",
-    price: "- $891.34"
+    name: "Droppx Technology Oy",
+    type: "E-commerce & Delivery Platform",
+    description: "End-to-end development of a comprehensive e-commerce and logistics marketplace connecting merchants with delivery services.",
+    technologies: "Node.js, React, React Native, MongoDB, Shopify API",
+    results: "Multi-sided marketplace handling thousands of monthly transactions for 100+ businesses",
+    website: "https://thehub.io/startups/droppx"
   }
 ];
 
@@ -55,59 +46,57 @@ export const Hero = () => {
             </Button>
           </div>
 
-          {/* Crypto Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-12 max-w-5xl mx-auto">
-            {cryptoCards.map((card, index) => (
+          {/* Client Case Studies */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-12 max-w-6xl mx-auto">
+            {clientCards.map((card, index) => (
               <div
                 key={index}
-                className={`rounded-2xl p-6 transition-all duration-300 hover:scale-105 ${
+                className={`rounded-2xl p-6 md:p-8 transition-all duration-300 hover:scale-105 ${
                   card.featured
                     ? 'bg-primary text-primary-foreground'
                     : 'bg-card border border-border'
                 }`}
               >
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className={`w-10 h-10 rounded-full flex items-center justify-center text-2xl ${
-                      card.featured ? 'bg-white/20' : 'bg-muted'
-                    }`}>
-                      {card.icon}
-                    </div>
-                    <div className="text-left">
-                      <div className="font-semibold">{card.name}</div>
-                      <div className={`text-sm ${card.featured ? 'text-primary-foreground/70' : 'text-muted-foreground'}`}>
-                        {card.symbol}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    {card.change > 0 ? (
-                      <ArrowUp className="w-4 h-4 text-green-500" />
-                    ) : (
-                      <ArrowDown className="w-4 h-4 text-red-500" />
-                    )}
-                    <span className={card.change > 0 ? 'text-green-500' : 'text-red-500'}>
-                      {Math.abs(card.change)}%
-                    </span>
-                  </div>
-                </div>
-                <div className="space-y-2 text-left">
+                <div className="space-y-4 text-left">
                   <div>
-                    <div className={`text-2xl font-bold ${card.featured ? '' : 'text-foreground'}`}>
-                      {card.marketCap}
-                    </div>
-                    <div className={`text-sm ${card.featured ? 'text-primary-foreground/70' : 'text-muted-foreground'}`}>
-                      Market Cap
-                    </div>
+                    <h3 className="text-xl md:text-2xl font-bold mb-1">{card.name}</h3>
+                    <p className={`text-sm md:text-base font-medium ${card.featured ? 'text-primary-foreground/80' : 'text-muted-foreground'}`}>
+                      {card.type}
+                    </p>
                   </div>
+                  
+                  <p className={`text-sm md:text-base leading-relaxed ${card.featured ? 'text-primary-foreground/90' : 'text-foreground'}`}>
+                    {card.description}
+                  </p>
+                  
                   <div>
-                    <div className={`text-lg ${card.featured ? 'text-primary-foreground/90' : 'text-muted-foreground'}`}>
-                      {card.price}
-                    </div>
-                    <div className={`text-sm ${card.featured ? 'text-primary-foreground/70' : 'text-muted-foreground'}`}>
-                      Price Now
-                    </div>
+                    <p className={`text-xs md:text-sm font-semibold mb-1 ${card.featured ? 'text-primary-foreground/80' : 'text-muted-foreground'}`}>
+                      Technologies
+                    </p>
+                    <p className={`text-sm ${card.featured ? 'text-primary-foreground/90' : 'text-foreground'}`}>
+                      {card.technologies}
+                    </p>
                   </div>
+                  
+                  <div>
+                    <p className={`text-xs md:text-sm font-semibold mb-1 ${card.featured ? 'text-primary-foreground/80' : 'text-muted-foreground'}`}>
+                      Results
+                    </p>
+                    <p className={`text-sm ${card.featured ? 'text-primary-foreground/90' : 'text-foreground'}`}>
+                      {card.results}
+                    </p>
+                  </div>
+                  
+                  <a 
+                    href={card.website} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={`inline-block text-sm md:text-base font-medium hover:underline ${
+                      card.featured ? 'text-primary-foreground' : 'text-primary'
+                    }`}
+                  >
+                    View Project →
+                  </a>
                 </div>
               </div>
             ))}
