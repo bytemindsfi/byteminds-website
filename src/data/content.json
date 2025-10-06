@@ -1,116 +1,116 @@
 {
-  "hero": {
-    "title": "Building Scalable Software, Testing Relentlessly, Future Engineering",
-    "subtitle": "From idea to impact—we craft lean, future-proof solution that grows with your vision",
+    "hero": {
+        "title": "Building Scalable Software, Testing Relentlessly, Future Engineering",
+        "subtitle": "From idea to impact—we craft lean, future-proof solution that grows with your vision",
+        "cta": {
+            "primary": "Get in Touch",
+            "secondary": "Explore More"
+        }
+    },
+    "stats": {
+        "title": "We know what we are cooking",
+        "metrics": [
+            {
+                "value": "$2.5M",
+                "label": "Users"
+            },
+            {
+                "value": "$762M",
+                "label": "Raised"
+            },
+            {
+                "value": "$59M",
+                "label": "Views"
+            }
+        ]
+    },
+    "services": {
+        "title": "How we can help",
+        "subtitle": "At Byteminds, we turn complex challenges into Digital solutions that scale at the speed of your business.",
+        "items": [
+            {
+                "icon": "lock",
+                "title": "Custom Software Development",
+                "description": "Future-proof applications tailored to your exact needs."
+            },
+            {
+                "icon": "radio",
+                "title": "E-commerce & Shopify Solutions",
+                "description": "Optimized stores that convert browsers into buyers."
+            },
+            {
+                "icon": "send",
+                "title": "QA & Test Automation",
+                "description": "Catch bugs before they catch your business."
+            },
+            {
+                "icon": "headphones",
+                "title": "UI/UX & Design Systems",
+                "description": "Interfaces users love at first click."
+            },
+            {
+                "icon": "cloud",
+                "title": "DevOps & Cloud Solutions",
+                "description": "Your always-perfect, never-overwhelming infrastructure."
+            },
+            {
+                "icon": "bot",
+                "title": "AI Integration",
+                "description": "Make your business think for itself."
+            },
+            {
+                "icon": "navigation",
+                "title": "Technical Consulting",
+                "description": "Fugit magnam qui vero officia quis qui. Et aut maiores omnis nequeag unde sos voluptas."
+            },
+            {
+                "icon": "headset",
+                "title": "UI/UX & Design Systems",
+                "description": "Rem doloremque labore ullam officia quos odit. Minus sed voluptatem illo quam rerum."
+            }
+        ]
+    },
+    "clients": {
+        "title": "Target Clients",
+        "segments": [
+            {
+                "name": "Startups",
+                "description": "MVP Development, Technical Consulting - From first line of code to first million"
+            },
+            {
+                "name": "SMEs",
+                "description": "E-commerce Solutions, Automation tools, AI Agents Deployment - Technology that grows when you do"
+            },
+            {
+                "name": "Game Studios",
+                "description": "QA/Testing, Unity Development - Build once. Deploy everywhere. Stress never"
+            },
+            {
+                "name": "Enterprises",
+                "description": "Legacy System Modernization, Security Audits"
+            }
+        ]
+    },
+    "ceo": {
+        "name": "Olujuwon Alabi",
+        "title": "Founder and CEO",
+        "quote": "We speak tech so your business can speak profits."
+    },
     "cta": {
-      "primary": "Get in Touch",
-      "secondary": "Explore More"
+        "title": "Get started with Byteminds",
+        "subtitle": "Learn and become a crypto guru with us.",
+        "buttonText": "Book a Date"
+    },
+    "footer": {
+        "social": [
+            {
+                "platform": "twitter",
+                "url": "https://twitter.com/byteminds"
+            },
+            {
+                "platform": "instagram",
+                "url": "https://instagram.com/byteminds"
+            }
+        ]
     }
-  },
-  "stats": {
-    "title": "We know what we are cooking",
-    "metrics": [
-      {
-        "value": "$2.5M",
-        "label": "Users"
-      },
-      {
-        "value": "$762M",
-        "label": "Raised"
-      },
-      {
-        "value": "$59M",
-        "label": "Views"
-      }
-    ]
-  },
-  "services": {
-    "title": "How we can help",
-    "subtitle": "At Byteminds, we turn complex challenges into Digital solutions that scale at the speed of your business.",
-    "items": [
-      {
-        "icon": "lock",
-        "title": "Custom Software Development",
-        "description": "Future-proof applications tailored to your exact needs."
-      },
-      {
-        "icon": "radio",
-        "title": "E-commerce & Shopify Solutions",
-        "description": "Optimized stores that convert browsers into buyers."
-      },
-      {
-        "icon": "send",
-        "title": "QA & Test Automation",
-        "description": "Catch bugs before they catch your business."
-      },
-      {
-        "icon": "headphones",
-        "title": "UI/UX & Design Systems",
-        "description": "Interfaces users love at first click."
-      },
-      {
-        "icon": "cloud",
-        "title": "DevOps & Cloud Solutions",
-        "description": "Your always-perfect, never-overwhelming infrastructure."
-      },
-      {
-        "icon": "bot",
-        "title": "AI Integration",
-        "description": "Make your business think for itself."
-      },
-      {
-        "icon": "navigation",
-        "title": "Technical Consulting",
-        "description": "Fugit magnam qui vero officia quis qui. Et aut maiores omnis nequeag unde sos voluptas."
-      },
-      {
-        "icon": "headset",
-        "title": "UI/UX & Design Systems",
-        "description": "Rem doloremque labore ullam officia quos odit. Minus sed voluptatem illo quam rerum."
-      }
-    ]
-  },
-  "clients": {
-    "title": "Target Clients",
-    "segments": [
-      {
-        "name": "Startups",
-        "description": "MVP Development, Technical Consulting - From first line of code to first million"
-      },
-      {
-        "name": "SMEs",
-        "description": "E-commerce Solutions, Automation tools, AI Agents Deployment - Technology that grows when you do"
-      },
-      {
-        "name": "Game Studios",
-        "description": "QA/Testing, Unity Development - Build once. Deploy everywhere. Stress never"
-      },
-      {
-        "name": "Enterprises",
-        "description": "Legacy System Modernization, Security Audits"
-      }
-    ]
-  },
-  "ceo": {
-    "name": "Olujuwon Alabi",
-    "title": "Founder and CEO",
-    "quote": "We speak tech so your business can speak profits."
-  },
-  "cta": {
-    "title": "Get started with Byteminds",
-    "subtitle": "Learn and become a crypto guru with us.",
-    "buttonText": "Book a Date"
-  },
-  "footer": {
-    "social": [
-      {
-        "platform": "twitter",
-        "url": "https://twitter.com/byteminds"
-      },
-      {
-        "platform": "instagram",
-        "url": "https://instagram.com/byteminds"
-      }
-    ]
-  }
 }
