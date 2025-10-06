@@ -13,7 +13,7 @@ const Index = () => {
         <Hero />
         <Services />
         <Clients />
-        <CEO />
+     {/*   <CEO />*/}
         <CTA />
       </main>
     </div>

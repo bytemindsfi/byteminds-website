@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import content from "@/data/content.json";
+import {Link} from "react-router-dom";
 
 const clientCards = [
   {
@@ -38,9 +39,11 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center pt-4">
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90">
-              {content.hero.cta.primary}
-            </Button>
+              <Link to="https://forms.gle/YAojMhtb6dnnfHk18" target='_blank'>
+                  <Button size="lg" className="bg-secondary hover:bg-secondary/90">
+                      {content.hero.cta.primary}
+                  </Button>
+              </Link>
             <Button size="lg" variant="outline">
               {content.hero.cta.secondary}
             </Button>
@@ -87,7 +90,7 @@ export const Hero = () => {
                     </p>
                   </div>
                   
-                  <a 
+                  {/*<a
                     href={card.website} 
                     target="_blank" 
                     rel="noopener noreferrer"
@@ -96,7 +99,7 @@ export const Hero = () => {
                     }`}
                   >
                     View Project →
-                  </a>
+                  </a>*/}
                 </div>
               </div>
             ))}

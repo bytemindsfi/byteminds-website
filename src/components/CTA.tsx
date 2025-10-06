@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Twitter, Instagram } from "lucide-react";
 import content from "@/data/content.json";
+import {Link} from "react-router-dom";
 
 export const CTA = () => {
   return (
@@ -15,9 +16,11 @@ export const CTA = () => {
           </p>
           
           <div className="pt-4">
+              <Link to="https://calendly.com/bytemindsfi/30min" target='_blank'>
             <Button size="lg" className="bg-secondary hover:bg-secondary/90">
               {content.cta.buttonText}
             </Button>
+              </Link>
           </div>
 
           <div className="flex gap-6 justify-center pt-8">
