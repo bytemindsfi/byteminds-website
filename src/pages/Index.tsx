@@ -2,7 +2,7 @@ import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { Services } from '@/components/Services';
 import { Clients } from '@/components/Clients';
-import { CEO } from '@/components/CEO';
+import { LOCATION } from '@/components/LOCATION.tsx';
 import { CTA } from '@/components/CTA';
 
 const Index = () => {
@@ -13,7 +13,7 @@ const Index = () => {
                 <Hero />
                 <Services />
                 <Clients />
-                {/*   <CEO />*/}
+                <LOCATION />
                 <CTA />
             </main>
         </div>

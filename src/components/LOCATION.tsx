@@ -1,7 +1,7 @@
-import ceoPhoto from '@/assets/ceo-photo.jpg';
+import locationPhoto from '@/assets/location.png';
 import content from '@/data/content.json';
 
-export const CEO = () => {
+export const LOCATION = () => {
     return (
         <section className="py-20 relative">
             {/* Decorative shape */}
@@ -13,18 +13,18 @@ export const CEO = () => {
                         <div className="flex-shrink-0">
                             <div className="relative">
                                 <img
-                                    src={ceoPhoto}
-                                    alt={content.ceo.name}
-                                    className="w-64 h-64 object-cover rounded-3xl"
+                                    src={locationPhoto}
+                                    alt={content.location.name}
+                                    className="w-120 h-64 object-cover rounded-3xl"
                                 />
                             </div>
                         </div>
 
                         <div className="flex-1 text-center md:text-left">
-                            <h3 className="text-3xl font-bold mb-2">{content.ceo.name}</h3>
-                            <p className="text-muted-foreground mb-6">{content.ceo.title}</p>
+                            <h3 className="text-3xl font-bold mb-2">{content.location.name}</h3>
+                            <p className="text-muted-foreground mb-6">{content.location.title}</p>
                             <blockquote className="text-xl md:text-2xl font-medium leading-relaxed">
-                                "{content.ceo.quote}"
+                                {content.location.quote}
                             </blockquote>
                         </div>
                     </div>
