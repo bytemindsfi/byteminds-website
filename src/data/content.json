@@ -91,10 +91,10 @@
             }
         ]
     },
-    "ceo": {
-        "name": "Olujuwon Alabi",
-        "title": "Founder and CEO",
-        "quote": "We speak tech so your business can speak profits."
+    "location": {
+        "name": "",
+        "title": "Where are we?",
+        "quote": "We are located in the heart of Helsinki, Finland"
     },
     "cta": {
         "title": "Get started with Byteminds",

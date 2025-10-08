@@ -8,7 +8,10 @@ export const Header = () => {
             <div className="container mx-auto px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                     <img src={logo} alt="Byteminds" className="h-8 w-8" />
-                    <span className="text-xl font-bold">Byteminds</span>
+                    <div className="flex items-end gap-1">
+                        <span className="text-xl font-bold">Byteminds</span>
+                        <span className="text-[0.5rem] font-semibold">3410491-6</span>
+                    </div>
                 </div>
                 <Link to="https://forms.gle/YAojMhtb6dnnfHk18" target="_blank">
                     <Button variant="outline" size="sm">
